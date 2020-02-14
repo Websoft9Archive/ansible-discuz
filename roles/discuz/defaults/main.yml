@@ -1,0 +1,10 @@
+#Discuz版本，需定期维护
+discuz_version: v3.4-20191201
+
+#Web服务器：apache | nginx，通过交互式选择获取
+discuz_webs: apache
+
+discuz_vhost_dir: /etc/httpd/vhost
+discuz_vhost_src: vhost.conf
+discuz_service: httpd
+discuz_owner: apache
