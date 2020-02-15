@@ -35,7 +35,7 @@
   shell: mv /data/wwwroot/DiscuzX /data/wwwroot/discuz
 
 - name: copy discuz config
-  copy: src=config_global_default.php dest=/data/wwwroot/discuz/upload/config
+  template: src=config_global_default.php dest=/data/wwwroot/discuz/upload/config/config_global_default.php
 
 # 系统通用
 - name: Permission directory
