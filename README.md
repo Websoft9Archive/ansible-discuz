@@ -1,7 +1,7 @@
 
 # Discuz 自动化安装与部署
 
-本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [Discuz](https://www.discuz.net/forum.php) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 Redis，让原本复杂的安装过程变得没有任何技术门槛。  
+本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [Discuz](https://www.discuz.net/forum.php) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 Discuz，让原本复杂的安装过程变得没有任何技术门槛。  
 
 本项目是开源项目，采用 LGPL3.0 开源协议。
 
@@ -11,9 +11,9 @@
 
 | 条件       | 详情       | 备注  |
 | ------------ | ------------ | ----- |
-| 操作系统       | CentOS7.x       |    |
-| 公有云| AWS, Azure, 阿里云, 华为云, 腾讯云 |  |
-| 私有云|  KVM, VMware, VirtualBox, OpenStack |  |
+| 操作系统       | CentOS7.x       |   |
+| 公有云| AWS, Azure, 阿里云, 华为云, 腾讯云 | 可选 |
+| 私有云|  KVM, VMware, VirtualBox, OpenStack | 可选 |
 | 服务器配置 | 最低1核1G，安装时所需的带宽不低于10M |  建议采用按量100M带宽 |
 
 ## 组件
@@ -24,9 +24,16 @@
 
 ## 本项目安装的是 Discuz 最新版吗？
 
-本项目是下载码云上[Discuz源码](https://gitee.com/ComsenzDiscuz/DiscuzX)安装，具体版本号可在 [Discuz 仓库](https://gitee.com/ComsenzDiscuz/DiscuzX)的 [tags列表](https://gitee.com/ComsenzDiscuz/DiscuzX/tags) 查询，根据需求更改[main.yml 文件](/roles/discuz/defaults/main.yml) 中的 ```discuz_version``` 版本号。
+本项目通过下载[Discuz源码](https://gitee.com/ComsenzDiscuz/DiscuzX)进行安装，其中版本号存储在：[role/discuz/defaults/main.yml](/roles/discuz/defaults/main.yml)
 
-我们会定期检查版本准确性，并增加官方最新的stable版本，以保证用户可以顺利安装最新的 Discuz 版本。
+```
+#Discuz版本，需定期维护
+discuz_version: v3.4-20191201
+```
+
+如果你想修改版本号，请先查看 Discuz 仓库 [tags](https://gitee.com/ComsenzDiscuz/DiscuzX/tags) 标签值，再修改上面的 `moodle_version` 变量值。
+
+我们会定期检查版本，并测试官方版本的可用性，以保证用户可以顺利安装最新的 Discuz 版本。
 
 ## 安装指南
 
@@ -54,8 +61,3 @@ wget -N https://raw.githubusercontent.com/Websoft9/linux/master/ansible_script/i
 
 - 命令脚本部署与镜像部署有什么区别？请参考：[镜像部署-vs-脚本部署](https://support.websoft9.com/docs/faq/zh/bz-product.html#镜像部署-vs-脚本部署)
 - 本项目支持在 Ansible Tower 上运行吗？支持
-
-## To do
-
-* 添加 Nginx 支持
-* 添加 Ubuntu18.04, Amazon Linux2 支持
