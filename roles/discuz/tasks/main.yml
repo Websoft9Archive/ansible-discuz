@@ -26,6 +26,11 @@
     path: /data/wwwroot/www.example.com
     state: absent
 
+- name: Remove existing discuz dir
+  file:
+    path: /data/wwwroot/discuz
+    state: absent
+
 - name: Download Discuz!X3.4
   git:
     repo: https://gitee.com/ComsenzDiscuz/DiscuzX.git
