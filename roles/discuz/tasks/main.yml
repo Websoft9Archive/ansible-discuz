@@ -9,16 +9,13 @@
     discuz_service: "{{php_runtime_meta[ansible_distribution][discuz_webs].service}}"
     discuz_owner: "{{php_runtime_meta[ansible_distribution][discuz_webs].owner}}"
     discuz_db_password: "{{mysql_root_password}}"
+    discuz_name: "discuz"
+    discuz_title: "Discuz"
+    discuz_download_url: "https://gitee.com/ComsenzDiscuz/DiscuzX.git"
+    discuz_version: "v3.4-20191201"
 
 - debug:
     msg: runtime {{ discuz_vhost_dir }}, {{discuz_vhost_src}}, {{discuz_service}}, {{discuz_owner}}, {{discuz_webs}}, {{ansible_distribution}}
-
-# 9panel
-- name: Enabled 9panel I
-  lineinfile:
-    path: /data/apps/9panel/js/websoft9.js
-    regexp: 'var set_apps=\["Example"\];'
-    line: 'var set_apps=["Discuz"];'
 
 # Discuz!X3.4
 - name: Remove example dir
@@ -26,14 +23,24 @@
     path: /data/wwwroot/www.example.com
     state: absent
 
+- name: delete existing discuz directory
+  file:
+    path: /data/wwwroot/{{discuz_name}}
+    state: absent
+
+- name: Create discuz directory
+  file:
+    path: /data/wwwroot/{{discuz_name}}
+    state: directory
+
 - name: Download Discuz!X3.4
   git:
-    repo: https://gitee.com/ComsenzDiscuz/DiscuzX.git
+    repo: "{{discuz_download_url}}"
     dest: /data/wwwroot/
     version: "{{ discuz_version }}"
 
 - name: Rename directory name
-  shell: mv /data/wwwroot/DiscuzX /data/wwwroot/discuz
+  shell: mv /data/wwwroot/* /data/wwwroot/discuz
 
 - name: copy discuz config
   template: src=config_global_default.php dest=/data/wwwroot/discuz/upload/config/config_global_default.php
