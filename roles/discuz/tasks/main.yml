@@ -18,15 +18,8 @@
     msg: runtime {{ discuz_vhost_dir }}, {{discuz_vhost_src}}, {{discuz_service}}, {{discuz_owner}}, {{discuz_webs}}, {{ansible_distribution}}
 
 # Discuz!X3.4
-- name: Remove example dir
-  file:
-    path: /data/wwwroot/www.example.com
-    state: absent
-
-- name: delete existing discuz directory
-  file:
-    path: /data/wwwroot/{{discuz_name}}
-    state: absent
+- name: Remove extra dir
+  shell: rm -rf /data/wwwroot/*
 
 - name: Create discuz directory
   file:
@@ -38,9 +31,6 @@
     repo: "{{discuz_download_url}}"
     dest: /data/wwwroot/discuz
     version: "{{ discuz_version }}"
-
-- name: Rename directory name
-  shell: mv /data/wwwroot/* /data/wwwroot/discuz
 
 - name: copy discuz config
   template: src=config_global_default.php dest=/data/wwwroot/discuz/upload/config/config_global_default.php
