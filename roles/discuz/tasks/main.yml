@@ -36,7 +36,7 @@
 - name: Download Discuz!X3.4
   git:
     repo: "{{discuz_download_url}}"
-    dest: /data/wwwroot/
+    dest: /data/wwwroot/discuz
     version: "{{ discuz_version }}"
 
 - name: Rename directory name
