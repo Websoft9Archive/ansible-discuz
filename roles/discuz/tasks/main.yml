@@ -9,17 +9,15 @@
     discuz_service: "{{php_runtime_meta[ansible_distribution][discuz_webs].service}}"
     discuz_owner: "{{php_runtime_meta[ansible_distribution][discuz_webs].owner}}"
     discuz_db_password: "{{mysql_root_password}}"
-    discuz_name: "discuz"
-    discuz_title: "Discuz"
-    discuz_download_url: "https://gitee.com/ComsenzDiscuz/DiscuzX.git"
-    discuz_version: "v3.4-20191201"
 
 - debug:
     msg: runtime {{ discuz_vhost_dir }}, {{discuz_vhost_src}}, {{discuz_service}}, {{discuz_owner}}, {{discuz_webs}}, {{ansible_distribution}}
 
 # Discuz!X3.4
 - name: Remove extra dir
-  shell: rm -rf /data/wwwroot/*
+  shell: |
+    rm -rf /data/wwwroot/www.example.com
+    rm -rf /data/wwwroot/{{discuz_name}}
 
 - name: Create discuz directory
   file:
