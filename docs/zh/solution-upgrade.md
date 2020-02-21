@@ -25,5 +25,7 @@ apt update && apt upgrade -y
 
 ## Discuz 升级
 
-Discuz 需要手工上传升级包方可升级，也就是说升级对普通用户来说有点难。另外，官方一直没有正式的升级教程，因此我们无法提供升级方案。
+Discuz 需要手工上传升级包方可升级，也就是说升级对普通用户来说有点难。  
+
+Discuz官方提供了一个简易的升级方案，[查看详情](https://gitee.com/ComsenzDiscuz/DiscuzX/wikis/%E5%8D%87%E7%BA%A7%E6%96%B9%E6%B3%95?sort_id=9978)
 
