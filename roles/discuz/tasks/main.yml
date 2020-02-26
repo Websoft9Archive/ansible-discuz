@@ -24,6 +24,11 @@
     path: /data/wwwroot/{{discuz_name}}
     state: directory
 
+- name: Remove existing discuz dir
+  file:
+    path: /data/wwwroot/discuz
+    state: absent
+
 - name: Download Discuz!X3.4
   git:
     repo: "{{discuz_download_url}}"
