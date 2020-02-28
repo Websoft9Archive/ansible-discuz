@@ -16,17 +16,12 @@
 # Discuz!X3.4
 - name: Remove extra dir
   shell: |
-    rm -rf /data/wwwroot/{{discuz_name}}
+    rm -rf /data/wwwroot/*{{discuz_name}}*
 
 - name: Create discuz directory
   file:
-    path: /data/wwwroot/*{{discuz_name}}*
+    path: /data/wwwroot/{{discuz_name}}
     state: directory
-
-- name: Remove existing discuz dir
-  file:
-    path: /data/wwwroot/discuz
-    state: absent
 
 - name: Download Discuz!X3.4
   git:
@@ -57,3 +52,6 @@
     
   - name: restart Apache or Nginx
     service: name={{discuz_service}} state=restarted enabled=yes
+
+  - name: restart php-fpm
+    service: name=php-fpm state=restarted
