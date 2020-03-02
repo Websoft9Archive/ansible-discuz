@@ -24,16 +24,13 @@
 
 ## 本项目安装的是 Discuz 最新版吗？
 
-本项目通过下载[Discuz源码](https://gitee.com/ComsenzDiscuz/DiscuzX)进行安装，其中版本号存储在：[role/discuz/defaults/main.yml](/roles/discuz/defaults/main.yml)
+本项目通过下载 Discuz 源码进行安装，版本号存储在：[role/discuz/defaults/main.yml](/roles/discuz/defaults/main.yml)。我们会定期检查并测试官方版本的可用性，尽可能保证用户可以顺利安装最新版。
 
 ```
-#Discuz版本，需定期维护
 discuz_version: v3.4-20191201
 ```
 
-如果你想修改版本号，请先查看 Discuz 仓库 [tags](https://gitee.com/ComsenzDiscuz/DiscuzX/tags) 标签值，再修改上面的 `discuz_version` 变量值即可安装指定版本。
-
-我们会定期检查版本，并测试官方版本的可用性，以保证用户可以顺利安装最新的 Discuz 版本。
+如果你发现不是最新版本，请先查看 Discuz 仓库的 [tags](https://gitee.com/ComsenzDiscuz/DiscuzX/tags) 标签值，再修改 [main.yml](/roles/discuz/defaults/main.yml) 的 `discuz_version` 变量值即可安装最新版 Discuz。
 
 ## 安装指南
 
