@@ -31,7 +31,7 @@
 discuz_version: v3.4-20191201
 ```
 
-如果你想修改版本号，请先查看 Discuz 仓库 [tags](https://gitee.com/ComsenzDiscuz/DiscuzX/tags) 标签值，再修改上面的 `moodle_version` 变量值。
+如果你想修改版本号，请先查看 Discuz 仓库 [tags](https://gitee.com/ComsenzDiscuz/DiscuzX/tags) 标签值，再修改上面的 `discuz_version` 变量值即可安装指定版本。
 
 我们会定期检查版本，并测试官方版本的可用性，以保证用户可以顺利安装最新的 Discuz 版本。
 
