@@ -28,7 +28,16 @@
     repo: "{{discuz_download_url}}"
     dest: /data/wwwroot/discuz
     version: "{{ discuz_version }}"
+  when: discuz_latest
 
+#仅用于本单独项目，多应用项目请忽略本任务
+- name: Download Discuz!X3.3
+  unarchive:
+    src: "https://libs.websoft9.com/apps/Discuz_X3.3_SC_UTF8.zip"
+    dest: /data/wwwroot/{{discuz_name}}
+    remote_src: yes
+  when: not discuz_latest
+  
 - name: Rename dir name
   shell: cd /data/wwwroot; if [ ! -d "{{discuz_name}}" ]; then mv *{{discuz_name}}* {{discuz_name}}; fi
 

@@ -13,17 +13,29 @@
       private: no
       default: 1
 
+    - name: 'distribution_selection'
+      prompt: "\nWhich distribution do you want to use? [ 1/2 ] \n\n
+      1: Discuz3.4(suggestion)\n
+      2: Discuz3.3\n"
+      private: no
+      default: 1
+
   vars:
 
     webs_select:
       '1': 'apache'
       '2': 'nginx'
+    
+    distribution_select:
+      '1': True
+      '2': False
 
     infrastructure_select:
       '1': 'LAMP'
       '2': 'LNMP'
 
     discuz_webs: "{{webs_select[webs_selection]}}" 
+    discuz_latest: "{{distribution_select[distribution_selection]}}" 
     phpmyadmin_webs: "{{webs_select[webs_selection]}}" 
     w9panel_webs: "{{webs_select[webs_selection]}}" 
 
@@ -34,9 +46,12 @@
   pre_tasks:
     - include_vars: roles/role_cloud/vars/cloud_download_url.yml
       when: region == '1' or region == 1
+    
+    - include_vars: vars/special.yml
+      when: not discuz_latest
 
     - debug:
-        msg: Discuz will be installed on {{w9panel_set_infrastructure}}, OS is {{ansible_distribution}}, region code is {{region}}
+        msg: Discuz will be installed on {{w9panel_set_infrastructure}}, php is {{php_version}}, OS is {{ansible_distribution}}, region code is {{region}}
 
   roles:
     - {role: role_common, tags: "role_common"}
