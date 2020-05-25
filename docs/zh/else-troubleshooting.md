@@ -27,6 +27,15 @@
  2. 在找到的表里删除掉siteuniqueid这个数据（pre_common_setting表中的第10页位置。）
  3. 再重新进入网站后台——应用——获取更多应用，再次下载更新试下吧！
 
+#### Discuz 手机版访问报错“接口错误 err05 微社区域名已更换”
+
+错误原因：Discuz官方提供的接口地址由http://wsq.discuz.qq.com/ 换成了现在 http://wsq.discuz.com/
+解决方法：
+
+  1. 登录服务器，找到Discuz根目录下的 *class\helper\helper_form.php* 文件
+  2. 
+
+
 #### Discuz GBK版本乱码?
 
 Websoft9提供的 Discuz 部署包默认都是UTF-8，一般情况下也可以支持 GBK 版本的Discuz。即当您用Discuz(GBK) 替换 Discuz00(UTF-8) 源码的时候，安装或使用若出现乱码，请参考如下解决办法：
