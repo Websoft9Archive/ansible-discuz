@@ -19,16 +19,8 @@ mysql_users:
 # 初始化MySQL root密码
 init_db: 
     mysql:
-      user: root
+      admin: root
+      user: ["discuz"]
       password: "123456"  
-  
-# 应用数据库信息
-init_application:
-  discuz:
-    service: php-fpm
-    database: discuz 
-    database_user: discuz
-    database_host: localhost
-    database_password: "123456"
-    config_path:
+      config_path:
       - /data/wwwroot/discuz/upload/config/config_global_default.php
