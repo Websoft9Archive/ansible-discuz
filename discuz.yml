@@ -15,8 +15,9 @@
 
     - name: 'distribution_selection'
       prompt: "\nWhich distribution do you want to use? [ 1/2 ] \n\n
-      1: Discuz3.4(suggestion)\n
-      2: Discuz3.3\n"
+      1: DiscuzX3.4(suggestion)\n
+      2: DiscuzX3.3\n
+      3: DiscuzQ\n"
       private: no
       default: 1
 
@@ -29,6 +30,7 @@
     distribution_select:
       '1': True
       '2': False
+      '3': "discuzq"
 
     infrastructure_select:
       '1': 'LAMP'
