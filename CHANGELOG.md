@@ -15,4 +15,5 @@
 
 ### Features
 
+* 2020-07-17  Add DiscuzQ, need test
 * 2020-02-14  改写discuz项目，待测
