@@ -2,7 +2,7 @@
 discuz_webs: apache
 
 #用于处理新旧版本
-discuz_latest: True
+discuz_latest: discuzx34
 
 discuz_vhost_dir: /etc/httpd/vhost
 discuz_vhost_src: vhost.conf
