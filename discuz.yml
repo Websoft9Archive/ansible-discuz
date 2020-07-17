@@ -53,7 +53,7 @@
       when: region == '1' or region == 1
     
     - include_vars: vars/special.yml
-      when: not discuz_latest
+      when: discuz_latest == "discuzx33"
 
     - debug:
         msg: Discuz will be installed on {{w9panel_set_infrastructure}}, php is {{php_version}}, OS is {{ansible_distribution}}, region code is {{region}}
