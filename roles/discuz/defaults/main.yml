@@ -1,7 +1,7 @@
 #Web服务器：apache | nginx，通过交互式选择获取
 discuz_webs: apache
 
-#用于处理新旧版本
+# discuz version [discuzx33,discuzx34,discuzq]
 discuz_latest: discuzx34
 
 discuz_vhost_dir: /etc/httpd/vhost
