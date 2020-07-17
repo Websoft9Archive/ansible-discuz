@@ -28,8 +28,8 @@
       '2': 'nginx'
     
     distribution_select:
-      '1': True
-      '2': False
+      '1': "discuzx34"
+      '2': "discuzx33"
       '3': "discuzq"
 
     infrastructure_select:
