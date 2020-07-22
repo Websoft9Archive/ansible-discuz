@@ -42,7 +42,7 @@
   when: discuz_latest != "discuzq"
   
 - name: Download and install Discuz!Q by composer
-  shell: composer create-project --prefer-dist qcloud/discuz --repository=https://cloud.discuz.chat
+  shell: echo "yes" |composer create-project --prefer-dist qcloud/discuz --repository=https://cloud.discuz.chat --no-scripts
   args:
     chdir: /data/wwwroot/discuz
   when: discuz_latest == "discuzq"
