@@ -70,6 +70,8 @@
     - {role: role_phpmyadmin, tags: "role_phpmyadmin"}
     - {role: role_9panel, tags: "role_9panel"}
     - {role: role_redis, tags: "role_redis"}
+    - {role: role_docker, tags: "role_docker"}
+    - {role: role_nodejs, tags: "role_nodejs"}
     - {role: discuz, tags: "discuz"}
     - {role: role_init_password, tags: "role_init_password"}
     - {role: role_preend, tags: "role_preend"}
