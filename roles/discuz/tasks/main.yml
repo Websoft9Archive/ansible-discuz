@@ -44,7 +44,7 @@
 - name: Download and install Discuz!Q by composer
   shell: echo "yes" |composer create-project --prefer-dist qcloud/discuz --repository=https://cloud.discuz.chat --no-scripts
   args:
-    chdir: /data/wwwroot/discuz
+    chdir: /data/wwwroot
   when: discuz_latest == "discuzq"
   
 - name: Rename dir name
