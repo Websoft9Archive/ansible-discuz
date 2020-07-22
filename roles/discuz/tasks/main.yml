@@ -31,7 +31,7 @@
     version: "{{ discuz_version }}"
     when: discuz_latest == "discuzx34"
 
-  #仅用于本单独项目，多应用项目请忽略本任务
+  #仅用于本单独项目，多应用项目请忽略本任务 
   - name: Download Discuz!X3.3
     unarchive:
     src: "https://libs.websoft9.com/apps/Discuz_X3.3_SC_UTF8.zip"
