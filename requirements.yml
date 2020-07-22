@@ -40,3 +40,9 @@
 
 - src: http://github.com/websoft9dev/role_redis
   version: master
+ 
+- src: https://github.com/websoft9dev/role_docker
+  version: master
+
+- src: https://github.com/websoft9dev/role_nodejs
+  version: master
