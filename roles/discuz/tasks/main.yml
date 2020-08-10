@@ -22,6 +22,7 @@
   file:
     path: /data/wwwroot/{{discuz_name}}
     state: directory
+  when: discuz_latest != "discuzq"
     
  #仅用于本单独项目，多应用项目请忽略本任务   
 - block:
