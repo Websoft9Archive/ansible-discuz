@@ -42,11 +42,35 @@
     template: src=config_global_default.php dest=/data/wwwroot/discuz/upload/config/config_global_default.php
   when: discuz_latest != "discuzq"
   
-- name: Download and install Discuz!Q by composer
-  shell: echo "yes" |composer create-project --prefer-dist qcloud/discuz --repository=https://cloud.discuz.chat --no-scripts
-  args:
-    chdir: /data/wwwroot
+- name: Install php-zip module
+  shell: yum install php-pecl-zip -y
+  when: ansible_os_family == "RedHat"
+
+- name: Install php-zip module
+  shell: apt install php{{php_version}}-zip -y
+  when: ansible_os_family == "Debian"
+
+- name: Download discuzq
+  unarchive:
+    src: {{discuzq_download_url}}
+    dest: /data/wwwroot
   when: discuz_latest == "discuzq"
+
+- name: Change vhost.conf file1
+  lineinfile:
+      dest: {{discuz_vhost_dir}}/{{discuz_vhost_src}}
+      regexp: "DocumentRoot "/data/wwwroot/www.example.com""
+      line: "DocumentRoot "/data/wwwroot/public""
+      backrefs: yes
+  when: {{discuz_webs}} == "apache"
+
+- name: Change vhost.conf file2
+  lineinfile:
+      dest: {{discuz_vhost_dir}}/{{discuz_vhost_src}}
+      regexp: "<Directory "/data/wwwroot/www.example.com">"
+      line: "<Directory "/data/wwwroot/public">"
+      backrefs: yes
+  when: {{discuz_webs}} == "apache"
   
 - name: Rename dir name
   shell: cd /data/wwwroot; if [ ! -d "{{discuz_name}}" ]; then mv *{{discuz_name}}* {{discuz_name}}; fi
