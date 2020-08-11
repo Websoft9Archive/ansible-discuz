@@ -55,22 +55,6 @@
     src: {{discuzq_download_url}}
     dest: /data/wwwroot
   when: discuz_latest == "discuzq"
-
-- name: Change vhost.conf file1
-  lineinfile:
-      dest: {{discuz_vhost_dir}}/{{discuz_vhost_src}}
-      regexp: "DocumentRoot "/data/wwwroot/www.example.com""
-      line: "DocumentRoot "/data/wwwroot/public""
-      backrefs: yes
-  when: {{discuz_webs}} == "apache"
-
-- name: Change vhost.conf file2
-  lineinfile:
-      dest: {{discuz_vhost_dir}}/{{discuz_vhost_src}}
-      regexp: "<Directory "/data/wwwroot/www.example.com">"
-      line: "<Directory "/data/wwwroot/public">"
-      backrefs: yes
-  when: {{discuz_webs}} == "apache"
   
 - name: Rename dir name
   shell: cd /data/wwwroot; if [ ! -d "{{discuz_name}}" ]; then mv *{{discuz_name}}* {{discuz_name}}; fi
@@ -89,7 +73,22 @@
 
   - name: Copy Apache or Nginx vhost configuration
     template: src={{discuz_vhost_src}} dest={{discuz_vhost_dir}}
-    
+  - name: Change vhost.conf file1
+  lineinfile:
+      dest: {{discuz_vhost_dir}}/{{discuz_vhost_src}}
+      regexp: "DocumentRoot "/data/wwwroot/www.example.com""
+      line: "DocumentRoot "/data/wwwroot/public""
+      backrefs: yes
+  when: {{discuz_webs}} == "apache"
+
+- name: Change vhost.conf file2
+  lineinfile:
+      dest: {{discuz_vhost_dir}}/{{discuz_vhost_src}}
+      regexp: "<Directory "/data/wwwroot/www.example.com">"
+      line: "<Directory "/data/wwwroot/public">"
+      backrefs: yes
+  when: {{discuz_webs}} == "apache"
+  
   - name: restart Apache or Nginx
     service: name={{discuz_service}} state=restarted enabled=yes
 
