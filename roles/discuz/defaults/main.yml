@@ -12,5 +12,6 @@ discuz_db_password: "123456"
 discuz_name: "discuz"
 discuz_title: "Discuz"
 discuz_download_url: "https://gitee.com/ComsenzDiscuz/DiscuzX.git"
+discuzq_download_url: "https://dl.discuz.chat/dzq_latest_install.zip"
 #版本号需定期维护
 discuz_version: "v3.4-20191201"   
