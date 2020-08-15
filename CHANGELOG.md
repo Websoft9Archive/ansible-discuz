@@ -9,6 +9,7 @@
 
 ### Bug Fixes
 
+* 2020-08-15  Change to phpMyAdmin on Docker
 * 2020-02-20  修复变量定义不全问题，测试成功
 * 2020-02-15  修正 bug
 * 2020-02-14  改写discuz项目
