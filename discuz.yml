@@ -39,7 +39,6 @@
     runtime_name: "{{infrastructure_select[webs_selection] | lower}}" 
     discuz_webs: "{{webs_select[webs_selection]}}" 
     discuz_latest: "{{distribution_select[distribution_selection]}}" 
-    phpmyadmin_webs: "{{webs_select[webs_selection]}}" 
     w9panel_webs: "{{webs_select[webs_selection]}}" 
 
     w9panel_set_infrastructure: "{{infrastructure_select[webs_selection]}}" 
@@ -64,10 +63,9 @@
     - {role: role_apache, tags: "role_apache", when: discuz_webs == 'apache'}
     - {role: role_nginx, tags: "role_nginx", when: discuz_webs == 'nginx'}
     - {role: role_mysql, tags: "role_mysql"}
-    - {role: role_php-fpm, tags: "role_php-fpm"}
+    - {role: role_php, tags: "role_php"}
     - {role: role_inotify_watch, tags: "role_inotify_watch"}
     - {role: role_runtime, tags: "role_runtime"}
-    - {role: role_phpmyadmin, tags: "role_phpmyadmin"}
     - {role: role_9panel, tags: "role_9panel"}
     - {role: role_redis, tags: "role_redis"}
     - {role: role_docker, tags: "role_docker"}
