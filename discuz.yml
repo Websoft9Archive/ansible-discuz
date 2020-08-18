@@ -14,7 +14,7 @@
       default: 1
 
     - name: 'distribution_selection'
-      prompt: "\nWhich distribution do you want to use? [ 1/2 ] \n\n
+      prompt: "\nWhich distribution do you want to use? [ 1/3 ] \n\n
       1: DiscuzX3.4(suggestion)\n
       2: DiscuzX3.3\n
       3: DiscuzQ\n"
