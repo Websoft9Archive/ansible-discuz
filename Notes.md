@@ -1,5 +1,14 @@
 # install discuzq
-[安装](https://discuz.com/docs/install.html#%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A6%81%E6%B1%82)
-
+[安装文档](https://discuz.com/docs/install.html#%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A6%81%E6%B1%82)
+***
 ## FAQ
-经过研究发现,需先通过公网ip/dl.php初始化
+经过研究发现,discuzq在安装完成后,需先通过 *公网ip/dl.php* 进入初始化界面:  
+在此过程中需输入如下固定参数:  
+数据库库名: discuz  
+数据库用户名: discuz  
+数据库密码: 随机密码 `cat /credentials/password.txt`  
+其他参数由用户自定义: 站点名称,管理员账号,管理员密码;  
+
+初始化完成后,通过 *公网ip* 可直接访问论坛首页;  
+            通过 *公网ip/admin* 访问管理员界面;  
+
