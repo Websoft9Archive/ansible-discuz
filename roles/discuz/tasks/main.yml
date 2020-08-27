@@ -72,9 +72,6 @@
   - name: change owner&group
     shell: chown -R {{discuz_owner}}:{{discuz_owner}} /data/wwwroot
     
-   - name: chmod 403 forbidden
-    shell: chmod 755 -R /data
-    
   - name: Copy Apache or Nginx vhost configuration
     template: src={{discuz_vhost_src}} dest={{discuz_vhost_dir}}
     when: discuz_latest != "discuzq"
