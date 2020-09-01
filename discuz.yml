@@ -70,6 +70,6 @@
     - {role: role_docker, tags: "role_docker"}
     - {role: role_nodejs, tags: "role_nodejs"}
     - {role: discuz, tags: "discuz"}
-    - {role: role_init_password, tags: "role_init_password"}
+    - {role: role_init, tags: "role_init"}
     - {role: role_preend, tags: "role_preend"}
     - {role: role_end, tags: "role_end"}
