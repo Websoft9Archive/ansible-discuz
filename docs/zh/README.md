@@ -4,9 +4,9 @@ home: false
 
 # 关于
 
-本文档由 [Websoft9](https://www.websoft9.com/) 公司提供，用于指导用户学习 Discuz! 的安装部署与基本运维技术，包括：Discuz! 部署、初始化安装、环境配置、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作。
+本文档由 [Websoft9](https://www.websoft9.com/) 公司提供，用于指导用户学习 Discuz 的安装部署与基本运维技术，包括：Discuz 部署、初始化安装、环境配置、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作。
 
-Discuz! 是知名的中文论坛系统之一。采用PHP+MySQL开发，自2001年6月面世以来，Discuz!已拥有15年以上的应用历史和200多万网站用户案例。目前，Discuz! 已经发展成为一个以社区为基础的专业建站平台，让论坛（BBS）、社交网络（SNS）、门户（Portal）、群组（Group）、开放平台（Open Platform）应用充分融合于一体，帮助网站实现一站式服务。
+Discuz 是知名的中文论坛系统之一。采用PHP+MySQL开发，自2001年6月面世以来，Discuz 已拥有15年以上的应用历史和200多万网站用户案例。目前，Discuz 已经发展成为一个以社区为基础的专业建站平台，让论坛（BBS）、社交网络（SNS）、门户（Portal）、群组（Group）、开放平台（Open Platform）应用充分融合于一体，帮助网站实现一站式服务。
 
 ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuz-gui-websoft9.png)
 
@@ -14,7 +14,7 @@ Discuz! 是知名的中文论坛系统之一。采用PHP+MySQL开发，自2001�
 
 ## 演示
 
-快速了解 Discuz!，请查看[官方论坛](https://www.discuz.net)。官方默认主题看起来“平淡无奇”，但是实际上户可以通过“应用中心”进行丰富的外观的定制、功能的扩展。
+快速了解 Discuz，请查看[官方论坛](https://www.discuz.net)。官方默认主题看起来“平淡无奇”，但是实际上户可以通过“应用中心”进行丰富的外观的定制、功能的扩展。
 
 ## 改进
 
