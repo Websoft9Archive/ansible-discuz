@@ -31,9 +31,9 @@
 7.  进入论坛后，可以通过右上角登录对论坛进行管理。
     ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds06.png)
 
-## Discuzq 安装向导
+## DiscuzQ 安装向导
 
-1. 使用本地电脑的 Chrome 或 Firefox 浏览器访问网址：*http://域名* 或 *http://Internet IP*, 就进入引导首页
+1. 使用本地电脑的 Chrome 或 Firefox 浏览器访问网址：*http://域名* 或 *http://Internet IP/install*, 就进入引导首页
 
 2.  首先点击“我同意”，确认用户许可协议
     ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds01.png)
