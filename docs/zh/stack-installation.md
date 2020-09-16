@@ -50,10 +50,8 @@
     ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-admin-websoft9.png)
     
 论坛后台除了传统功能之外，可以方便的对接微信公众号，小程序，还可以实现微信支付，非常方便的为博主创收。
-
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-waychat-websoft9.png)
-    
-    
+
 ## 常见问题
 
 #### 安装的时候显示Discuz! Database Error
