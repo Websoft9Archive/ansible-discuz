@@ -6,8 +6,6 @@ discuz_latest: discuzx34
 
 discuz_vhost_dir: /etc/httpd/vhost
 discuz_vhost_src: vhost.conf
-dzq_discuz_vhost_src_apache: dzq_vhost.conf
-dzq_discuz_vhost_src_nginx: dzq_default.conf
 discuz_service: httpd
 discuz_owner: apache
 discuz_db_password: "123456"
