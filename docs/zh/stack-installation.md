@@ -38,18 +38,17 @@
 只有输入*http://域名/install* 或 *http://Internet IP/install*, 才会进入引导首页
 ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-notice-websoft9.png)
 
-2.  配置站点名称、数据库用户密码以及连接、后台管理用户信息等，输入完成后即直接点击“安装”。
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-install-websoft9.png)
+2. 配置站点名称、数据库用户密码以及连接、后台管理用户信息等，输入完成后即直接点击“安装”。
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-install-websoft9.png)
 
-3.  安装完成，会自动跳转首页，你可以访问论坛了，这是一个移动端风格的论坛。  
+3. 安装完成，会自动跳转首页，你可以访问论坛了，这是一个移动端风格的论坛。  
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-mobile-websoft9.png)
 
-4.  如果你要对论坛进行管理，：输入*http://域名/admin* 或 *http://Internet IP/admin*。输入开始设定的用户名和
+4. 如果你要对论坛进行管理，：输入*http://域名/admin* 或 *http://Internet IP/admin*。输入开始设定的用户名和
 密码后，就可以进入论坛后台了。
-
-    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-admin-websoft9.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-admin-websoft9.png)
     
-论坛后台除了传统功能外，可以方便的对接微信公众号，小程序，还可以实现微信支付，非常方便的为博主创收。
+5. 其他设置：微信公众号，小程序，微信支付等
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-waychat-websoft9.png)
 
 
