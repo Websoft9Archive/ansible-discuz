@@ -84,10 +84,6 @@
     shell: sed -i 's/\/data\/wwwroot\/example/\/data\/wwwroot\/discuz\/public/g'  /etc/nginx/conf.d/default.conf
     when: discuz_latest == "discuzq" and discuz_webs == "nginx"
     
-  - name: Copy Apache or Nginx vhost configuration
-    template: src={{dzq_discuz_vhost_src_nginx}} dest={{discuz_vhost_dir}}
-    when: discuz_latest == "discuzq" and discuz_webs == "nginx"
-    
   - name: restart Apache or Nginx
     service: name={{discuz_service}} state=restarted enabled=yes
 
