@@ -33,26 +33,26 @@
 
 ## DiscuzQ 安装向导
 
-1. 使用本地电脑的 Chrome 或 Firefox 浏览器访问网址：*http://域名* 或 *http://Internet IP/install*, 就进入引导首页
+1. 使用本地电脑的 Chrome 或 Firefox 浏览器访问网址：*http://域名* 或 *http://Internet IP*, 会提示站点未安装
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-noinstall-websoft9.png)
+只有输入*http://域名/install* 或 *http://Internet IP/install*, 才会进入引导首页
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-notice-websoft9.png)
 
-2.  首先点击“我同意”，确认用户许可协议
-    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds01.png)
+2.  配置站点名称、数据库用户密码以及连接、后台管理用户信息等，输入完成后即直接点击“安装”。
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-install-websoft9.png)
 
-3.  通过环境检测后，点击“下一步”。  
-    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds02.png)
+3.  安装完成，会自动跳转首页，你可以访问论坛了，这是一个移动端风格的论坛。  
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-mobile-websoft9.png)
 
-4.  选择需要安装的程序组，建议选择“全新安装”，然后点击“下一步”。  
-    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds03.png)
+4.  如果你要对论坛进行管理，：输入*http://域名/admin* 或 *http://Internet IP/admin*。输入开始设定的用户名和
+密码后，就可以进入论坛后台了。
 
-5.  配置数据库连接信息，建议采用默认项，即直接点击“下一步”。   
-    也可以修改预装的 MySQL 数据库信息（[查看数据库密码](/zh/stack-accounts.md#mysql)）
-    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds04.png)
+    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-admin-websoft9.png)
+    
+论坛后台除了传统功能之外，可以方便的对接微信公众号，小程序，还可以实现微信支付，非常方便的为博主创收。
 
-6.  安装完成，可以访问论坛了。  
-    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds05.png)
-
-7.  进入论坛后，可以通过右上角登录对论坛进行管理。
-    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds06.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-waychat-websoft9.png)
+    
     
 ## 常见问题
 
@@ -83,5 +83,3 @@ MySQL
 #### Discuz 默认界面为什么这么普通？
 
 是的，Discuz 默认的界面非常简单，但你可以通过后台的【应用中心】去购买模板，安装插件，对 Discuz 进行十足的个性化设置。
-
-
