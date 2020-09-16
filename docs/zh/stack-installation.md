@@ -31,6 +31,29 @@
 7.  进入论坛后，可以通过右上角登录对论坛进行管理。
     ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds06.png)
 
+## Discuzq 安装向导
+
+1. 使用本地电脑的 Chrome 或 Firefox 浏览器访问网址：*http://域名* 或 *http://Internet IP*, 就进入引导首页
+
+2.  首先点击“我同意”，确认用户许可协议
+    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds01.png)
+
+3.  通过环境检测后，点击“下一步”。  
+    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds02.png)
+
+4.  选择需要安装的程序组，建议选择“全新安装”，然后点击“下一步”。  
+    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds03.png)
+
+5.  配置数据库连接信息，建议采用默认项，即直接点击“下一步”。   
+    也可以修改预装的 MySQL 数据库信息（[查看数据库密码](/zh/stack-accounts.md#mysql)）
+    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds04.png)
+
+6.  安装完成，可以访问论坛了。  
+    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds05.png)
+
+7.  进入论坛后，可以通过右上角登录对论坛进行管理。
+    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/ds06.png)
+    
 ## 常见问题
 
 #### 安装的时候显示Discuz! Database Error
