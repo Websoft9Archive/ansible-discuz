@@ -70,7 +70,7 @@
 # 根据不同的基础环境分别处理
 - block:
   - name: change owner&group
-    shell: chown -R {{discuz_owner}}:{{discuz_owner}} /data/wwwroot
+    shell: chown -R {{discuz_owner}}:root /data/wwwroot
     
   - name: Update Apache vhsot configuration 
     shell: sed -i 's/"\/data\/wwwroot\/example"/"\/data\/wwwroot\/discuz\/upload"/g' /etc/httpd/conf.d/vhost.conf 
