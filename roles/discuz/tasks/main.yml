@@ -80,9 +80,9 @@
     shell: sed -i 's/\/data\/wwwroot\/example/\/data\/wwwroot\/discuz\/upload/g'  /etc/nginx/conf.d/default.conf
     when: discuz_latest != "discuzq" and discuz_webs == "nginx"
     
- - name: Update Apache vhsot configuration for discuzq
-   shell: sed -i 's/"\/data\/wwwroot\/example"/"\/data\/wwwroot\/discuz\/public"/g' /etc/httpd/conf.d/vhost.conf 
-   when: discuz_latest == "discuzq" and discuz_webs == "apache"
+  - name: Update Apache vhsot configuration for discuzq
+    shell: sed -i 's/"\/data\/wwwroot\/example"/"\/data\/wwwroot\/discuz\/public"/g' /etc/httpd/conf.d/vhost.conf 
+    when: discuz_latest == "discuzq" and discuz_webs == "apache"
   
   - name: Copy Nginx vhost configuration
     template: src={{discuz_vhost_src}} dest={{discuz_vhost_dir}}
