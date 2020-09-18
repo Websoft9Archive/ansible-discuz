@@ -7,7 +7,7 @@ return [
     'locale' => 'zh-CN',
     'fallback_locale' => 'zh-CN',
     'timezone' => 'Asia/Shanghai',
-    'key' => '',
+    'key' => 'base64:JtNRiS14Mopb+HNi3ztxi6259im9DTDBJXOzLDbcquw=',
     'cipher' => 'AES-256-CBC',
     'database' =>
         [
