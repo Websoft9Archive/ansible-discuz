@@ -60,8 +60,8 @@
 - name: Rename dir name
   shell: cd /data/wwwroot; if [ ! -d "{{discuz_name}}" ]; then mv *{{discuz_name}}* {{discuz_name}}; fi
 
-- name: copy discuz config
-  template: src=config.php dest=/data/wwwroot/discuz/public/config/config.php
+- name: copy discuzq config
+  template: src=config.php dest=/data/wwwroot/discuz/config/config.php
   when: discuz_latest == "discuzq"
 
 # 系统通用
