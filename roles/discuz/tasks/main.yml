@@ -61,7 +61,11 @@
   shell: cd /data/wwwroot; if [ ! -d "{{discuz_name}}" ]; then mv *{{discuz_name}}* {{discuz_name}}; fi
   
 - name: copy discuz config
-  template: src=install.blade.php dest=/data/wwwroot/discuz/resources/views/install/install.blade.php
+  shell: |
+    sed -i 's/<input name="mysqlDatabase">/<input name="mysqlDatabase" value="discuz">/g' /data/wwwroot/discuz/resources/views/install/install.blade.php
+    sed -i 's/<input name="mysqlUsername">/<input name="mysqlUsername" value="discuz">/g'  /data/wwwroot/discuz/resources/views/install/install.blade.php
+    sed -i 's/<input type="password" name="mysqlPassword">/<input type="password" name="mysqlPassword" value="123456">/g' /data/wwwroot/discuz/resources/views/install/install.blade.php
+    sed -i 's/<input type="text" name="tablePrefix">/<input type="text" name="tablePrefix" value="pre_">/g' /data/wwwroot/discuz/resources/views/install/install.blade.php
   when: discuz_latest == "discuzq"
 
 # 系统通用
