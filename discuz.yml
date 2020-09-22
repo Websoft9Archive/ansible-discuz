@@ -45,8 +45,6 @@
     w9panel_set_apps: 
       - Discuz
       
-    discuz_init_path: "{{ (discuz_latest != discuzq)| ternary(/data/wwwroot/discuz/upload/config/config_global_default.php,/data/wwwroot/discuz/resources/views/install/install.blade.php) }}" 
-    
     preend_certbot: True
     
     discuz_init_path: "{{ (discuz_latest == 'discuzq')| ternary('/data/wwwroot/discuz/resources/views/install/install.blade.php','/data/wwwroot/discuz/upload/config/config_global_default.php') }}"
