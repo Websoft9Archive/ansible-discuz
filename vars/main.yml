@@ -26,5 +26,8 @@ init_db:
       admin: root
       users: ["discuz"]
       password: "123456"  
-      config_paths: {{discuz_config_path}}
+      config_paths:
+        - /data/wwwroot/discuz/upload/config/config_global_default.php
+        - /data/wwwroot/discuz/resources/views/install/install.blade.php
+      
         
