@@ -27,4 +27,4 @@ init_db:
       users: ["discuz"]
       password: "123456"  
       config_paths:
-       - '{{discuz_init_path}}'
+       - "{{discuz_init_path}}"
