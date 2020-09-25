@@ -4,6 +4,12 @@
 
 > 大部分故障与云平台密切相关，如果你可以确认故障的原因是云平台造成的，请参考[云平台文档](https://support.websoft9.com/docs/faq/zh/tech-instance.html)
 
+#### Discuz后台系统首页的文件校验显示大量文件被修改，这是系统风险或网站漏洞吗？
+
+websoft9为了优化用户体验，初始设定了随机密码；同时为了用户安全，修改了网站的访问权限，这样造成安装文件被修改的假象。
+例如，discuzX3.4显示318文件被修改，60个文件丢失，这个是正常的，请务必担心。请参照下图
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuz-risk-websoft9.png)
+
 #### Discuz 重定向错误？
 
 重定向错误比较常见。处理办法：分析网站根目录下的 `.htaccess` 文件，看看有没有死循环规则
