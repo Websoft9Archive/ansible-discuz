@@ -117,9 +117,14 @@ Discuz论坛安装完成后，想使连接里面显示文章名，应怎么开�
 Discuz 上传附件大小可以根据用户组进行设置，来设定不同用户上传附件的大小
 
 1.进入后台，选择“用户”选项，在“管理者”中选择相应用户组，进入基本设置
+
 discuz-Modify- attachmentsize1.png
+
 2.选择“论坛相关”，选中“附件相关”
+
 discuz-Modify- attachmentsize2.png
+
 3.进入附件相关，在“论坛最大附件尺寸”中设置附加最大尺寸，前置条件需要修改[PHP最大上传文件大小与之匹配](https://support.websoft9.com/docs/linux/zh/lang-php.html#%E9%85%8D%E7%BD%AE)
+
 discuz-Modify- attachmentsize3.png
 
