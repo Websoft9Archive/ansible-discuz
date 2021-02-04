@@ -32,6 +32,10 @@ Discuz 有非常强大生态，大量在线安装模板、插件，您通过登�
 
 > 声明：Websoft9 不擅长 Discuz 具体功能的使用，更无法提供此类问题指出。请自行参阅 [Discuz 官方论坛](http://www.discuz.net/forum.php) 完成你要做的吧
 
+## DiscuzQ 修改数据库配置
+
+DiscuzQ 安装目录下的 *config/config.php* 存储数据库连接信息，可以通过此文件来应对数据库账号信息发送变化。
+
 ## Discuz 修改数据库配置
 
 在你的 Discuz 安装目录下，有三个与数据库相关的配置文件：
