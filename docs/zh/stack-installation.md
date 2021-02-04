@@ -54,7 +54,6 @@
 ## 常见问题
 
 #### 本地浏览器访问： *http://服务器公网IP* 显示 "该站点未安装"？
-![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-noinstall-websoft9.png)
 
 问题原因： 没有完成 DiscuzQ 初始化  
 解决方案： 本地浏览器访问： *http://服务器公网IP/dl.php* 开始安装
