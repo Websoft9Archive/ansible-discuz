@@ -4,17 +4,17 @@ home: false
 
 # 关于
 
-本文档由 [Websoft9](https://www.websoft9.com/) 公司提供，用于指导用户学习 Discuz 的安装部署与基本运维技术，包括：Discuz 部署、初始化安装、环境配置、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作。
+本文档由 [Websoft9](https://www.websoft9.com/) 公司提供，用于指导用户学习 Discuz 的安装部署与基本运维技术，包括：部署、初始化安装、环境配置、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作。
 
-Discuz 是知名的中文论坛系统之一。采用PHP+MySQL开发，自2001年6月面世以来，Discuz 已拥有15年以上的应用历史和200多万网站用户案例。目前，Discuz 已经发展成为一个以社区为基础的专业建站平台，让论坛（BBS）、社交网络（SNS）、门户（Portal）、群组（Group）、开放平台（Open Platform）应用充分融合于一体，帮助网站实现一站式服务。
+Discuz 是开源的论坛社区系统，诞生于2001年6月，目前已经演进为 DiscuzQ，它拥有完全开源、提供丰富接口、前后端分离、轻量化、数据独立可控、敏捷上云、快速变现七大能力。
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuz-gui-websoft9.png)
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-guiweb-websoft9.png)
 
 ---
 
 ## 演示
 
-快速了解 Discuz，请查看[官方论坛](https://www.discuz.net)。官方默认主题看起来“平淡无奇”，但是实际上户可以通过“应用中心”进行丰富的外观的定制、功能的扩展。
+通过官网 [Discuz](https://www.discuz.net)和[DiscuzQ](https://discuz.com/) 查看其界面。官方看起来“平淡无奇”，但是实际上户可以通过“应用中心”进行丰富的外观的定制、功能的扩展。
 
 ## 改进
 

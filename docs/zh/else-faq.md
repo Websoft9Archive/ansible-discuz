@@ -1,5 +1,9 @@
 # FAQ
 
+#### [DiscuzQ](https://discuz.com/) 与 Discuz 有什么关系和区别？
+
+从品牌上讲，DiscuzQ 是全新架构的 Discuz。但从代码角度看，它们完全不一样。Discuz! Q 的前后端完全分离，后端基于 Laravel，前端基于 Vue.js 和 uni-app，易于二次开发和扩展。
+
 #### Discuz 支持多语言吗？
 
 官方没有提供多语言方案
