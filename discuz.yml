@@ -47,7 +47,7 @@
       
     preend_certbot: True
     
-    discuz_init_path: "{{ (discuz_latest == 'discuzq')| ternary('/data/wwwroot/discuz/resources/views/install/install.blade.php','/data/wwwroot/discuz/upload/config/config_global_default.php') }}"
+    discuz_init_path: "{{ (discuz_latest == 'discuzq')| ternary('/data/wwwroot/discuz/public/dl.php','/data/wwwroot/discuz/upload/config/config_global_default.php') }}"
   
   pre_tasks:
     - include_vars: roles/role_cloud/vars/cloud_download_url.yml

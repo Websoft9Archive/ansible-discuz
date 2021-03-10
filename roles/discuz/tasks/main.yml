@@ -62,10 +62,12 @@
   
 - name: Change discuzq configure 
   shell: |
-    sed -i 's/<input name="mysqlDatabase">/<input name="mysqlDatabase" value="discuz">/g' /data/wwwroot/discuz/resources/views/install/install.blade.php
-    sed -i 's/<input name="mysqlUsername">/<input name="mysqlUsername" value="discuz">/g'  /data/wwwroot/discuz/resources/views/install/install.blade.php
-    sed -i 's/<input type="password" name="mysqlPassword">/<input type="password" name="mysqlPassword" value="'{{discuz_db_password}}'">/g' /data/wwwroot/discuz/resources/views/install/install.blade.php
-    sed -i 's/<input type="text" name="tablePrefix">/<input type="text" name="tablePrefix" value="pre_">/g' /data/wwwroot/discuz/resources/views/install/install.blade.php
+    sed -i 's/value="<?= $mysqlDatabase /&?$mysqlDatabase : "discuz" /g'  dl.php
+    sed -i 's/value="<?= $mysqlUsername /&?$mysqlUsername : "discuz" /g'  dl.php
+    sed -i 's/value="<?= $mysqlPassword /&?$mysqlPassword : "'{{discuz_db_password}}'" /g' dl.php
+    sed -i 's/value="<?= $tablePrefix /&?$tablePrefix : "pre_" /g'  dl.php
+  args:
+    chdir: /data/wwwroot/discuz/public
   when: discuz_latest == "discuzq"
 
 # 系统通用
