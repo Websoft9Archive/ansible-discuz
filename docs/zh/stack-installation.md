@@ -8,22 +8,24 @@
 2. 在云控制台安全组中，检查 **Inbound（入）规则** 下的 **TCP:80** 端口是否开启
 3. 若想用域名访问 Discuz，请先到 **域名控制台** 完成一个域名解析
 
-## DiscuzQ 安装向导
+## Discuz!Q 安装向导
 
-1. 本地电脑浏览器访问网址：*http://域名/install* 或 *http://服务器公网IP/install*, 进入安装界面
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-notice-websoft9.png)
+1. 本地电脑浏览器访问网址：*http://域名/dl.php* 或 *http://服务器公网IP/dl.php*, 进入安装向导界面
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-wizard-websoft9.png)
 
-2. 设置站点名称、数据库连接和管理员账号，其中**数据库连接无需修改**，然后点击【安装】
-  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-install-websoft9.png)
+2. 设置站点名称、数据库连接和管理员账号，其中**数据库连接无需修改**，然后点击【下一步】
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-setting-websoft9.png)
 
-3. 安装完成，会自动跳转首页，你可以访问论坛了，这是一个移动端风格的论坛。  
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-mobile-websoft9.png)
+3. 安装完成，手机扫描右侧二维码可以进入移动端页面。  
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-installok-websoft9.png)
 
-4. 如果你要对论坛进行管理，：输入*http://域名/admin* 或 *http://Internet IP/admin*。输入开始设定的用户名和
-密码后，就可以进入论坛后台了。
+4. 本地电脑浏览器访问网址：输入*http://域名/admin* 或 *http://Internet IP/admin*, 进入登录页面
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-admin-websoft9.png)
+
+5. 输入账号密码（[不知道账号密码？](/zh/stack-accounts.md#superset)），成功登录到 Discuz!Q 后台 
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-index-websoft9.png)
     
-5. 其他设置：微信公众号，小程序，微信支付等
+6. 其他设置：微信公众号，小程序，微信支付等
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-waychat-websoft9.png)
 
 ## Discuz 安装向导
