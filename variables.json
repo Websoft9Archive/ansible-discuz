@@ -11,7 +11,7 @@
   "requirements_configure_url": "https://gitee.com/ComsenzDiscuz/DiscuzX",
   "components": "Discuz, Apache/Nginx, MySQL, PHP",
   "install_way": {
-    "en": "Isntallation for download binaries files ",
+    "en": "Isntallation for download binaries files",
     "zh": "下载可执行二进制包解压安装"
   },
   "install_url": "https://gitee.com/Discuz/DiscuzX/tags"
