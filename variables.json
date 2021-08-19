@@ -1,18 +1,18 @@
 {
   "name": "discuz",
   "trademark": "DISCUZ",
-  "official_url": "https://discuz.com/",
+  "official_url": "https://www.discuz.net/forum.php",
   "support_os": "CentOS7.x, Ubuntu20.04, Amazon Linux2",
   "requirements_cpu": "1",
   "requirements_memory": "1",
   "requirements_Bandwidth": "100",
   "requirements_disk": "20",
   "requirements_swap": "2",
-  "requirements_configure_url": "https://discuz.com/docs/Linux%20%E4%B8%BB%E6%9C%BA.html",
+  "requirements_configure_url": "https://gitee.com/ComsenzDiscuz/DiscuzX",
   "components": "Discuz, Apache/Nginx, MySQL, PHP",
   "install_way": {
-    "en": "Compile isntallation for source",
-    "zh": "下载源码编译安装"
+    "en": "Isntallation for download binaries files ",
+    "zh": "下载可执行二进制包解压安装"
   },
-  "install_url": "https://discuz.com/docs/%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95.html"
+  "install_url": "https://gitee.com/Discuz/DiscuzX/tags"
 }
