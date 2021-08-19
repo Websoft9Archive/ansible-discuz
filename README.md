@@ -6,7 +6,7 @@
 
 [English](/README.md) | [简体中文](/README-zh.md)  
 
-**DISCUZ Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of [DISCUZ](https://discuz.com/) based on Ansible and shell. It helps user install DISCUZ and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
+**DISCUZ Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of [DISCUZ](https://www.discuz.net/forum.php) based on Ansible and shell. It helps user install DISCUZ and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
 
 ## System Requirement
 
@@ -19,7 +19,7 @@ System Requirement to install this repository are as following：
 | Private Cloud     | KVM, VMware, VirtualBox, OpenStack    | Optional                 |
 | Server Configuration | vCPU no less than 1 core, Memory no less than 1 GIB, Storage no less than 20 GB, Swap no less than 2GB |Bandwidth no less than 100M|
 
-To learn more information, please view [Installation & Configuration](https://discuz.com/docs/Linux%20%E4%B8%BB%E6%9C%BA.html).
+To learn more information, please view [Installation & Configuration](https://gitee.com/ComsenzDiscuz/DiscuzX).
 
 ## Ecosystem
 
@@ -62,7 +62,7 @@ This program provided by Websoft9 contains a series of software with separate co
 
 #### How to install and view the latest release?
 
-This repository install way is Compile isntallation for source, you can  view the version from [Official URL](https://discuz.com/docs/%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95.html).  
+This repository install way is Isntallation for download binaries files, you can  view the version from [Official URL](https://gitee.com/Discuz/DiscuzX/tags).  
 We will check [Release version](https://github.com/Websoft9/ansible-discuz/releases) regularly. Update and test this project to ensure that users can successfully install the required version of DISCUZ.
 
 #### Can I run this repository on Ansible Tower? 
