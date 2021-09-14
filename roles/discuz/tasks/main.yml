@@ -34,9 +34,9 @@
 
   - name: Install patch of latest 3.4
     unarchive:
-    src: "{{discuz_patch_url}}"
-    dest: /data/wwwroot/discuz/upload
-    remote_src: yes
+      src: "{{discuz_patch_url}}"
+      dest: /data/wwwroot/discuz/upload
+      remote_src: yes
     when: discuz_latest == "discuzx34"
     
   - name: Download Discuz!X3.3
