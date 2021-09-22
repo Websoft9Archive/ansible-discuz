@@ -38,9 +38,9 @@ websoft9为了优化用户体验，初始设定了随机密码；同时为了用
 错误原因：Discuz官方提供的接口地址由http://wsq.discuz.qq.com/ 换成了现在 http://wsq.discuz.com/
 解决方法：
 
-  1. 登录服务器，找到Discuz根目录下的 *class\helper\helper_form.php* 文件
-  2. 
-
+  1. 登录服务器，找到Discuz根目录下的 */data/wwwroot/discuz/upload/source/class/helper/helper_form.php* 文件
+  2. 将 'http://wsq.discuz.qq.com/', 25  改为 'http://wsq.discuz.com/', 22
+  3. 清除 data/cache/qrcode 下的所有缓存文件
 
 #### Discuz GBK版本乱码?
 
