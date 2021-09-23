@@ -1,3 +1,4 @@
+   
 #Web服务器：apache | nginx，通过交互式选择获取
 discuz_webs: apache
 
@@ -11,8 +12,5 @@ discuz_owner: apache
 discuz_db_password: "123456"
 discuz_name: "discuz"
 discuz_title: "Discuz"
-discuz_download_url: "https://gitee.com/Discuz/DiscuzX.git"
-discuz_patch_url: "https://www.dismall.com/forum.php?mod=attachment&aid=MjF8MzY2Yjc3ZDB8MTYzMTYxMDU2NHwwfDk2NjM%3D"
-discuzq_download_url: "https://dl.discuz.chat/dzq_latest_install.zip"
-#版本号需定期维护
-discuz_version: "v3.4-20210816"   
+discuz_download_url: "https://gitee.com/Discuz/DiscuzX/attach_files/815277/download"
+discuzq_download_url: "https://dl.discuz.chat/dzq_latest_install.zip" 
