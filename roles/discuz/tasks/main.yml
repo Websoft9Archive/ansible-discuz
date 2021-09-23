@@ -26,17 +26,10 @@
  #仅用于本单独项目，多应用项目请忽略本任务   
 - block:
   - name: Download Discuz!X3.4
-    git:
-      repo: "{{discuz_download_url}}"
-      dest: /data/wwwroot/discuz
-      version: "{{ discuz_version }}"
-    when: discuz_latest == "discuzx34"
-
-  - name: Install patch of latest 3.4
-    unarchive:
-      src: "{{discuz_patch_url}}"
-      dest: /data/wwwroot/discuz
-      remote_src: yes
+    shell: |
+      cd /data/wwwroot/{{discuz_name}}
+      wget {{discuz_download_url}}
+      unzip download
     when: discuz_latest == "discuzx34"
     
   - name: Download Discuz!X3.3
