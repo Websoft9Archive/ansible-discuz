@@ -72,7 +72,7 @@
   when: discuz_latest == "discuzq"
 
 - name: Get discuz version
-  shell: sudo echo "discuz version:" ` awk -F ',' '{print $2}' /data/wwwroot/discuz/upload/source/discuz_version.php  | awk -F \' '{print $2}' |awk '!/^$/'|awk -F: 'NR==1  || NR==2{print}' |awk 'BEGIN{ORS="-"}{print $0}' | awk -F "-" '{print $1 "-" $2}' `  |sudo tee -a /data/logs/install_version.txt
+  shell: sudo echo "discuz version:" ` awk -F ',' '{print $2}' /data/wwwroot/discuz/upload/source/discuz_version.php  | awk -F \' '{print $2}' |awk '!/^$/'|awk -F: 'NR==1  || NR==2{print}' |awk 'BEGIN{ORS="-"}{print $0}' | awk -F - '{print $1 "-" $2}' `  |sudo tee -a /data/logs/install_version.txt
 
 # 系统通用
 - name: Permission directory
