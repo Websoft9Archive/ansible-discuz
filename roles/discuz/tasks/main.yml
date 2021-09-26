@@ -71,6 +71,9 @@
     chdir: /data/wwwroot/discuz/public
   when: discuz_latest == "discuzq"
 
+- name: Get discuz version
+  shell: sudo echo "discuz version:" `grep "define('DISCUZ_VERSION'," /data/wwwroot/discuz/upload/source/discuz_version.php | awk -F ',' '{print $2}' | awk -F \' '{print $2}'` |sudo tee -a /data/logs/install_version.txt
+
 # 系统通用
 - name: Permission directory
   shell: find /data/wwwroot -type d -exec chmod 750 {} \;
