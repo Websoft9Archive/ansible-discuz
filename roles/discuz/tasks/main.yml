@@ -72,7 +72,29 @@
   when: discuz_latest == "discuzq"
 
 - name: Get discuz version
-  shell: sudo echo "discuz version:" ` awk -F ',' '{print $2}' /data/wwwroot/discuz/upload/source/discuz_version.php  | awk -F \' '{print $2}' |awk '!/^$/'|awk -F: 'NR==1  || NR==2{print}' |awk 'BEGIN{ORS="-"}{print $0}' | awk -F "-" '{print $1 "-" $2}' `  |sudo tee -a /data/logs/install_version.txt
+  shell: sudo echo "discuz version:" ` awk -F ',' '{print $2}' /data/wwwroot/discuz/upload/source/discuz_version.php  | awk -F \' '{print $2}' |awk '!/^$/' |awk -F ':' 'NR==1  || NR==2{print}' |awk 'BEGIN{ORS="-"}{print $0}' | awk -F '-' 'BEGIN{OFS="-"}{print $1,$2}' `  |sudo tee -a /data/logs/install_version.txt
+
+# 系统通用
+- name: Permission directory
+  shell: find /data/wwwroot -type d -exec chmod 750 {} \;
+  
+- name: Permission file
+  shell: find /data/wwwroot -not -type d -exec chmod 640 {} \;
+
+# 根据不同的基础环境分别处理
+- block:
+  - name: Copy Nginx or Aapche vhost configuration
+    template: src={{discuz_vhost_src}} dest={{discuz_vhost_dir}}
+  
+  - name: change owner&group
+    shell: chown -R {{discuz_owner}}:{{discuz_owner}} /data/wwwroot
+    
+  - name: restart Apache or Nginx
+    service: name={{discuz_service}} state=restarted enabled=yes
+
+  - name: restart php-fpm
+    service: name=php-fpm state=restarted
+
 
 # 系统通用
 - name: Permission directory
