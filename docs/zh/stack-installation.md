@@ -5,12 +5,12 @@
 ## 准备
 
 1. 在云控制台获取您的 **服务器公网IP地址** 
-2. 在云控制台安全组中，检查 **Inbound（入）规则** 下的 **TCP:80** 端口是否开启
+2. 在云控制台安全组中，检查 **Inbound（入）规则** 下的 **TCP:80/9001** 端口是否开启
 3. 若想用域名访问 Discuz，请先到 **域名控制台** 完成一个域名解析
 
 ## Discuz!Q 安装向导
 
-1. 本地电脑浏览器访问网址：*http://域名/dl.php* 或 *http://服务器公网IP/dl.php*, 进入安装向导界面
+1. 本地电脑浏览器访问网址：*http://域名/install* 或 *http://服务器公网IP/install*, 进入安装向导界面
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-wizard-websoft9.png)
 
 2. 设置站点名称、数据库连接和管理员账号，其中**数据库连接无需修改**，然后点击【下一步】
@@ -25,8 +25,11 @@
 5. 输入账号密码（[不知道账号密码？](/zh/stack-accounts.md#superset)），成功登录到 Discuz!Q 后台 
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-index-websoft9.png)
     
-6. 其他设置：微信公众号，小程序，微信支付等
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-waychat-websoft9.png)
+6. 其他设置：数据看板，微信公众号，小程序，微信支付等
+7. 
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-kanban-websoft9.png)
+
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-wechat-websoft9.png)
 
 ## Discuz 安装向导
 
