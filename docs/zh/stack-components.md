@@ -62,6 +62,26 @@ Discuz 配置文件： *C:\websoft9\wampserver\www\wp-config.php*
 
 WAMPServer 是支持 Discuz (WAMP) 的 PHP 运行环境，包括：Apache, PHP, MySQL/MariaDB 等组件，具体参考： [《WAMPServer 管理员手册》](https://support.websoft9.com/docs/wampserver/zh/stack-components.html)
 
+## Discuz！Q 路径
+
+Discuz！Q 以 docker 方式安装部署，其路径参数如下：
+
+### Discuz！Q
+
+Discuz！Q 项目目录： */data/wwwroot/docker-discuzq*
+Discuz！Q 网站目录： */data/wwwroot/docker-discuzq/volumes*  
+
+
+### MYSQL
+
+MySQL 数据文件 */data/mysql*  
+MySQL 可视化管理地址: *http://服务器公网IP/phpmyadmin*，用户名和密码请见 [账号密码](/zh/stack-accounts.md) 章节。
+
+### phpMyAdmin
+
+phpMyAdmin installation directory: */data/apps/phpmyadmin*  
+phpMyAdmin configuration file: */data/apps/phpmyadmin/config.inc.php*   
+phpMyAdmin vhost configuration file: */etc/httpd/conf.d/phpMyAdmin.conf* or */etc/nginx/php.conf*  
 
 ## 端口号
 
@@ -74,6 +94,8 @@ WAMPServer 是支持 Discuz (WAMP) 的 PHP 运行环境，包括：Apache, PHP, 
 | HTTP | 80 | 通过 HTTP 访问 Discuz | 必须 |
 | HTTPS | 443 | 通过 HTTPS 访问 Discuz | 可选 |
 | MySQL | 3306 | 远程连接 MySQL | 可选 |
+| PHPMyAdmin | 9090 | 可视化管理 MySQL | 可选 |
+| Discuz! Q | 9001 | 通过 HTTP 访问 Discuz！Q  | 必须 |
 
 ## 版本号
 
@@ -109,4 +131,4 @@ mysql -V
 
 # Redis version
 redis-server -v
-```
+```g
