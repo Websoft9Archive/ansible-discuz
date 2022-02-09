@@ -10,7 +10,7 @@
 
 ## Discuz!Q 安装向导
 
-1. 本地电脑浏览器访问网址：*http://域名/dl.php* 或 *http://服务器公网IP/dl.php*, 进入安装向导界面
+1. 本地电脑浏览器访问网址：*http://域名/install* 或 *http://服务器公网IP/install*, 进入安装向导界面
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/discuz/discuzq-wizard-websoft9.png)
 
 2. 设置站点名称、数据库连接和管理员账号，其中**数据库连接无需修改**，然后点击【下一步】
